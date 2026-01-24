@@ -1,4 +1,4 @@
-# ECE220 notion
+# ECE 220 notions
 
 ## Lecture 1
 Thu Jan 22 15:08:12 CST 2026
