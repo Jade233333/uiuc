@@ -1,0 +1,11 @@
+; R0 = R1' R2
+NOT R0, R1
+AND R0, R0, R2
+
+; R1 = R1 R2'
+NOT R2, R2
+AND R1, R1, R2
+
+; R0 = R1 add R0
+ADD R0, R0, R1
+
