@@ -12,6 +12,6 @@ SKIP
         ADD R1, R1, R1 ; left sfhit R1
         ADD R3, R3, #-1 ; decrement counter
         BRp LOOP
-END
+
         HALT
         .END

@@ -33,3 +33,12 @@ Last semester, we mentioned some weired behavior about the register R7 but we di
 That reminds us of a important idea in programing called callee-save and caller-save. Now we consider about *Trap*. The PC is changed by those traps, and during the process, orignal PC value is stored in R7 first and then by the end of process the PC is reloaded with R7 like nothing is happened to the PC. Is is called the callee-save. It means the subroutine does not change the value of a register or something the main program is using which is really good and something we always want. 
 
 Then what is a callor-save. Looking at the same process, the R7 is changed. If we want the value not to be lost, we need to save it manually in our main program and that is called a caller-save. Normally we don't do caller-save unless a register is used as output or return value.
+
+## MP1
+Sun Jan 25 17:21:56 CST 2026
+
+FUCKING TAKING me so much time to do it right. Fuck  !!!!!!! 
+
+The main issue is that on my local simulator. OUT will not change R7. But in school's simulator the OUT will change R7. It is something we talked about in the class but I still failed to notice it. As a result, the code runs fine on my machine but failed on school's EWS. Never mind. 
+
+Note that another issue is that in those ancient assembler on EWS, ';' followed by a label name will be consider part of the label. Fucking stupid. No one wants this feature. 
