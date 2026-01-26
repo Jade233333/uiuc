@@ -53,3 +53,12 @@ Also here are the list of common sets.
 | Integers   | $\mathbb{Z}$   |
 
 
+## Lecture 3
+
+Mon Jan 26 13:52:19 CST 2026
+
+In the previous notions, I talked too much about facts. In fact, we can find those complete set of facts in the lecutre notes. So from now on I only talk about my thoughts on those lectures. I probably will not allow myself to refer to notes while writing this. 
+
+So this lecture is an online session obviously because of the snow. Our real professor is fianlly here. The things is that our sub professor didn't actually finish all the contents on his notes. So our real professor thought we have understand something we apparently didn't. But that is fine. I will review the notes myself. 
+
+This time we talked mainly about proof. As a sample question about proving two sets are the same. There are two ways of doing it. One, do it by two-way subsets. Two, do it by membership table. I will probably implement those in homework. One thing I did not know before is the format of a formal proof. It ends with a square to indicate the end of proof. and that's it for today. I may finish the homeworh after this becase I have no more sync class today.
