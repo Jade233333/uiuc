@@ -42,3 +42,16 @@ FUCKING TAKING me so much time to do it right. Fuck  !!!!!!!
 The main issue is that on my local simulator. OUT will not change R7. But in school's simulator the OUT will change R7. It is something we talked about in the class but I still failed to notice it. As a result, the code runs fine on my machine but failed on school's EWS. Never mind. 
 
 Note that another issue is that in those ancient assembler on EWS, ';' followed by a label name will be consider part of the label. Fucking stupid. No one wants this feature. 
+
+## Lecture 3
+
+### Stack
+
+An interesting data structure. So far, I am not sure the advantage of this data strucutre but at list it is interesting. 
+
+So basically the idea is like coin collector. The first thing you put into is the last thing you can get out. In actual implementation, we use consecutive memory address. For example, the stack start at `x3FFF` then we have a point called *Stack Top*. We have two operations, push and pop. Push means to put something in and pop remove it and use it. When push, we move the stack point one memory address lower `x3FFE` and `LDR` to the point(conventionally R6). When pop we just move the pointer an address forward and leave the data there. Those are just trash data, they will be overwrite on the next PUSH.
+
+> [!NOTE]
+> Stack Top is the next avaible address. Not the current 'top'
+
+
