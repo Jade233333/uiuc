@@ -1,6 +1,8 @@
 # MATH 285 notions
 
-## Separable Equations
+## Lecture 2
+
+### Separable Equations
 
 aha. 写了一大段。
 
@@ -32,8 +34,15 @@ $\frac{P}{10-P} = \pm e^C \cdot e^{10kt}$
 
 Because $C$ is arbituary, we can wrote the whole plus minus thing to another arbituary constant $B$. Then you can solve it no problem. Just don't forget our initially ignored case when $f(y)\neq 0$
 
-## Slope Field
+
+## Lecutre 3
+### Slope Field
 
 Mon Jan 26 11:40:18 PM CST 2026
 
 This is something I haven't thought about but it is indeed interesting. As we talked about before, we can only solve a limit type of differential equations. So this provide us a way to see how the solution looks like without solving it. It is based on the continuity of a differentiable euqation.
+
+## Lecture 4 
+Wed Jan 28 15:33:34 CST 2026
+### Continuity
+Formal definition
