@@ -45,4 +45,15 @@ This is something I haven't thought about but it is indeed interesting. As we ta
 ## Lecture 4 
 Wed Jan 28 15:33:34 CST 2026
 ### Continuity
-Formal definition
+
+About continuity, we have a formal definition for it. That is something concise and interesting which I haven't thought about before.
+$\forall a within the range, \lim_{x\rightarrow a} f(x) = f(x)$
+
+### Existence and Uniqueness.
+
+It will be more obvious to tell this with a written function but I will try to describe the process in words to show that I understand.
+
+So we are talking about IVP, which is initial value problem. So we have two restraints. First, $dy/dt = f(y,t)$ then we know I point on the solution like $(0,0)$. 
+
+To **guaranteen** solution existence, we confirm the continuity of $f(y,t)$ about the initial point. By the way, if the provided restraints does not look like $dy/dt$. You have to convert that this way. To guaranteen uniqness, we need to confirm the continuity of $\partial f(y,t)/\partial y$. So you may not know that this is partical derivative which treats other variables as constant when do the derivative. That is probably a CalcIII content which we haven't learnt yet.
+
