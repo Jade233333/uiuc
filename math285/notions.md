@@ -57,3 +57,17 @@ So we are talking about IVP, which is initial value problem. So we have two rest
 
 To **guaranteen** solution existence, we confirm the continuity of $f(y,t)$ about the initial point. By the way, if the provided restraints does not look like $dy/dt$. You have to convert that this way. To guaranteen uniqness, we need to confirm the continuity of $\partial f(y,t)/\partial y$. So you may not know that this is partical derivative which treats other variables as constant when do the derivative. That is probably a CalcIII content which we haven't learnt yet.
 
+## Lecutre 5
+Fri Jan 30 17:26:22 CST 2026
+### Linear Integrating factor
+
+Last time we talked about how to tell the existence and uniqness of a LDE. This time, we learnt about how to solve the most easy type. So the idea is fairly tricky. This is probably the time we talked about that we have very good guesses.
+
+Put the equation in the following form
+$dy/dt + P(t)y = Q(t)$
+
+The intersting thing is that left part looks like a result of product rule. We have one $dy/dt$ term and one $y$ term. So we can multiply both side by the following integrating factor I to make it the result of $d/dx(Iy)$
+
+$e^{\int P(x) dx}$
+ 
+In that case we can solve the DE by integrate LHS of the equation.
