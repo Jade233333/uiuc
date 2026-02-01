@@ -62,3 +62,22 @@ Fri Jan 30 17:26:22 CST 2026
 So we talked about the data strucutre stack last time. And it do has a very handy implementation because of it last in first out strategy. In last week's MP, we encoutered some problem about nested subroutine. So here is a concept called **Runtime Stack**. So basically, we have main routines, sub routines. And inside thouse routines, we have local variables. Those are the variables we cannot access outside a subrountines. For instance, a value in subroutine R1, is not accessble in main routine R1. So instead, reserving global memories like we did in MP1, we can do reserve memories by stack and make everything local. 
 
 Here is how we do it. Before enter a subroutine. We do a callee-save of all the variables in main routine. Then our stack is in a frame only for the subroutine. In side this frame, we have a frame indicator to indicate the beginning of the frame. Then if we need any local storage we store then in the stack. By the end of subroutine, we use stack logic to restore all the value we save in reversed sequence.
+
+### Post-fix expression
+
+This kind of expreesion has an advantage of not taking extra space for parenthesses in terms of an mathematical expression. Its interpretation logic is implemented with the help of stack, by which I mean is the first in last out logic. In fact, I do not know which one comes first, the postfix expreesion or stack. 
+
+```lua
+local function insert_shell_date()
+    local s = vim.fn.system("date"):gsub("%s+$", "") -- trim trailing newline
+    vim.cmd("normal! i" .. s)
+    vim.cmd("stopinsert")
+end
+
+vim.keymap.set(
+    { "n" },
+    "<leader>r",
+    insert_shell_date,
+    { desc = "Insert `date` output at cursor" }
+)
+```
