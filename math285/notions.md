@@ -71,3 +71,22 @@ The intersting thing is that left part looks like a result of product rule. We h
 $e^{\int P(x) dx}$
  
 In that case we can solve the DE by integrate LHS of the equation.
+
+## Lecture 6
+Tue Feb  3 11:27:25 PM CST 2026
+
+### Exact equations
+
+Basically we talked about two thing today. One is this exact equation, the other is a sub trick when solving linear DE. Exact, weird name isn't it. So it comes from the reverse of chain rule in multivariable calculus. 
+$\partial f = \partial f/\partial x * dx + \partial y/\partial x * dy$ 
+So for an equation of this form 
+$M(x,y)dx+N(x,y)dy=0$ 
+could be possibly be the result of derivative of that function f in our previous equation.
+To make this happen, we must have $M(x,y)/\partial y=N(x,y)/\partial x$
+That is the reason we call it exact and the reason for this is from another rule of multi. 
+$\partial^2f/\partial x\partial y = \partial^2f/\partial y\partial x$
+
+### SUB Tricks
+
+Nothing new about this one, it is just a trick. So we have the form $y/t$ and only this inequation, we can sub it with a $v$. Do not that we need chain rule to get $dy/dt$. And also note that sometime it is not obvious, especially those with $\log$
+
