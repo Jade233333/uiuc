@@ -67,17 +67,16 @@ Here is how we do it. Before enter a subroutine. We do a callee-save of all the 
 
 This kind of expreesion has an advantage of not taking extra space for parenthesses in terms of an mathematical expression. Its interpretation logic is implemented with the help of stack, by which I mean is the first in last out logic. In fact, I do not know which one comes first, the postfix expreesion or stack. 
 
-```lua
-local function insert_shell_date()
-    local s = vim.fn.system("date"):gsub("%s+$", "") -- trim trailing newline
-    vim.cmd("normal! i" .. s)
-    vim.cmd("stopinsert")
-end
+## Lecture 6
+Fri Feb  6 00:37:37 CST 2026
+### Scope and lifetime
+In C `{}` creates a scope. Basically, just global and local variable, simple. However there something called life-time related to `static`
 
-vim.keymap.set(
-    { "n" },
-    "<leader>r",
-    insert_shell_date,
-    { desc = "Insert `date` output at cursor" }
-)
+```c
+void f() {
+    static int y = 0;
+    y++;
+    printf("%d\n", y);
+}
 ```
+In this case, if you do not have static, the local variable y will be created every time the fucntion f is called. However, use the `static y`, the life time will be the whole program and the scope will not change. Which means that increment in y will be remembered but only accessible inside `f()`
